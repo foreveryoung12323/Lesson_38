@@ -15,6 +15,6 @@ public:
 	string getNumber()const;
 	string getDepacture()const;
 	void setDepacture(string time);
-
+	bool operator <(const Train& right)const;
 
 };

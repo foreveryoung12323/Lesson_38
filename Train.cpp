@@ -33,3 +33,8 @@ void Train::setDepacture(string time)
 {
     depacture_time = time;
 }
+
+bool Train::operator<(const Train& right) const
+{
+    return this->depacture_time < right.depacture_time;
+}
